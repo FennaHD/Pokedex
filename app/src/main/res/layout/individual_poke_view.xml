@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/individualView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="103dp" />
+
+        <ImageView
+            android:id="@+id/pokemonPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@android:dimen/app_icon_size"
+            android:paddingStart="@android:dimen/app_icon_size"
+            android:paddingEnd="@android:dimen/app_icon_size"
+            android:paddingTop="?attr/dialogPreferredPadding"
+            android:text="@string/pokemon_name"/>
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@android:dimen/app_icon_size"
+            android:paddingStart="@android:dimen/app_icon_size"
+            android:paddingEnd="@android:dimen/app_icon_size"
+            android:text="@string/pokemon_weight" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@android:dimen/app_icon_size"
+            android:paddingStart="@android:dimen/app_icon_size"
+            android:paddingEnd="@android:dimen/app_icon_size"
+            android:text="@string/pokemon_height" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@android:dimen/app_icon_size"
+            android:paddingStart="@android:dimen/app_icon_size"
+            android:paddingEnd="@android:dimen/app_icon_size"
+            android:text="@string/pokemon_type" />
+
+    </LinearLayout>
+
+</LinearLayout>
