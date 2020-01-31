@@ -10,5 +10,10 @@
         android:gravity="center_vertical"
         android:orientation="vertical"
         >
+        <view class="androidx.appcompat.app.AlertController$RecycleListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </view>
     </LinearLayout>
 </ScrollView>

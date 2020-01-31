@@ -15,12 +15,8 @@ interface  PokeApiService{
 
     companion object Factory {
         fun create(): PokeApiService {
-            val retrofit = Retrofit.Builder()
-                    .baseUrl("https://pokeapi.co/api/v2/")
-                    .addConverterFactory(MoshiConverterFactory.create())
-                    .build()
-
-            return retrofit.create(PokeApiService::class.java)
+			return Retrofit.Builder().baseUrl("https://pokeapi.co/api/v2/").addConverterFactory(MoshiConverterFactory.create())
+					.build().create(PokeApiService::class.java)
         }
     }
 

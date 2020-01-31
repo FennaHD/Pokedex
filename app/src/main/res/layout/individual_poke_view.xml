@@ -1,63 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/individualView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/individualView"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#412B3131">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="264dp"
+		android:layout_height="355dp"
+		android:background="@drawable/rounded_shape"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.367">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="103dp" />
+		<ImageView
+			android:id="@+id/pokemon_picture"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.056" />
 
-        <ImageView
-            android:id="@+id/pokemonPicture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+		<TextView
+			android:id="@+id/pokemon_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pokemon_name"
+			android:textSize="20sp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.222"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/pokemon_picture"
+			app:layout_constraintVertical_bias="0.075" />
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@android:dimen/app_icon_size"
-            android:paddingStart="@android:dimen/app_icon_size"
-            android:paddingEnd="@android:dimen/app_icon_size"
-            android:paddingTop="?attr/dialogPreferredPadding"
-            android:text="@string/pokemon_name"/>
+		<TextView
+			android:id="@+id/weight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pokemon_weight"
+			android:textSize="20sp"
+			app:layout_constraintStart_toStartOf="@+id/pokemon_name"
+			app:layout_constraintTop_toBottomOf="@+id/pokemon_name" />
 
-        <TextView
-            android:id="@+id/weight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@android:dimen/app_icon_size"
-            android:paddingStart="@android:dimen/app_icon_size"
-            android:paddingEnd="@android:dimen/app_icon_size"
-            android:text="@string/pokemon_weight" />
+		<TextView
+			android:id="@+id/height"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pokemon_height"
+			android:textSize="20sp"
+			app:layout_constraintStart_toStartOf="@+id/weight"
+			app:layout_constraintTop_toBottomOf="@+id/weight" />
 
-        <TextView
-            android:id="@+id/height"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@android:dimen/app_icon_size"
-            android:paddingStart="@android:dimen/app_icon_size"
-            android:paddingEnd="@android:dimen/app_icon_size"
-            android:text="@string/pokemon_height" />
+		<TextView
+			android:id="@+id/type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pokemon_type"
+			android:textSize="20sp"
+			app:layout_constraintStart_toStartOf="@+id/height"
+			app:layout_constraintTop_toBottomOf="@+id/height" />
 
-        <TextView
-            android:id="@+id/type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@android:dimen/app_icon_size"
-            android:paddingStart="@android:dimen/app_icon_size"
-            android:paddingEnd="@android:dimen/app_icon_size"
-            android:text="@string/pokemon_type" />
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/guideline"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_end="539dp" />
 
-    </LinearLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
